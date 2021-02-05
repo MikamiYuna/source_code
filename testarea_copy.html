@@ -2,19 +2,21 @@
 <html lang="ja">
 <body>
 
-			<textarea id="copyTarget" rows="3" cols="30" readonly>ここに文字列</textarea>
-			<button onclick="copyToClipboard()">Copy text</button>
-    		<script>
-			function copyToClipboard() 
-			{
-            // コピー対象をJavaScript上で変数として定義する
-            var copyTarget = document.getElementById("copyTarget");
-            // コピー対象のテキストを選択する
-            copyTarget.select();
-            // 選択しているテキストをクリップボードにコピーする
-            document.execCommand("Copy");
-            // コピーをお知らせする
-            alert("コピーできました！");
-        	}
-    		</script>
+<textarea id="copyTarget" rows="3" cols="30" readonly>ここに文字列</textarea>
+<button onclick="copyToClipboard()">Copy text</button>
+
+	<script>
+	function copyToClipboard()
+	{
+	// コピー対象をJavaScript上で変数として定義する
+	var copyTarget = document.getElementById("copyTarget");
+	// コピー対象のテキストを選択する
+	copyTarget.select();
+	// 選択しているテキストをクリップボードにコピーする
+	document.execCommand("Copy");
+	// コピーをお知らせする
+	alert("コピーできました！");
+	}
+	</script>
+
 </body>
